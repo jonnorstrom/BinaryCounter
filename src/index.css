@@ -1,0 +1,75 @@
+html {
+  font-family: Futura, Helvetica, sans-serif;
+  background: rgb(73, 161, 244);
+  padding-top: 30px;
+}
+
+input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  background: rgba(43, 141, 244, .7);
+  font-size: 24px;
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 45px;
+}
+
+input:focus {
+   outline: none;
+}
+
+.App {
+  min-width: 480px;
+  text-align: center;
+}
+
+.total-sum {
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.directions {
+  font-size: 16px;
+}
+
+.switch-list {
+  width: 480px;
+  border: 3px rgb(226, 209, 177) solid;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.pink {
+  background: rgb(242, 140, 230)
+}
+
+.orange {
+  background: rgb(244, 184, 73)
+}
+
+.switch {
+  display: inline-block;
+  margin: 10px;
+  width: 40px;
+  height: 60px;
+  box-shadow: 2px 2px 1px rgba(53,141,224,.8);
+}
+
+.switch:active {
+  box-shadow: none;
+}
+
+.switch:hover {
+  cursor:pointer;
+}
+
+.switch p {
+  text-align: center;
+  position: relative;
+  bottom: 4px;
+}
