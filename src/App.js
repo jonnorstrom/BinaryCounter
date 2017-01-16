@@ -14,8 +14,8 @@ class App extends React.Component{
     }
 
     calculateTotal(){
-      var switches = this.state.switches;
-      var total = 0;
+      const { switches } = this.state;
+      let total = 0;
       for (var i = 0; i < switches.length; i++) {
         if (switches[i] === 1) {
           total += this.valueForIndex(i)
@@ -30,14 +30,13 @@ class App extends React.Component{
     }
 
     handleSwitchClick(index) {
-        var array  = this.state.switches
-        this.state.switches[index] === 1 ? array[index] = 0 : array[index] = 1;
+        const { switches }  = this.state
+        switches[index] === 1 ? switches[index] = 0 : switches[index] = 1;
 
         this.setState({
-          switches: array
+          switches
         })
     }
-
 
     makeNewBinaryArray(array, newTotal){
       for (var i = 0; i < array.length; i++) {

@@ -1,27 +1,22 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Switch from './Switch'
 
-class SwitchList extends React.Component {
-
-  renderSwitches(switches, handleSwitchClick) {
-    return switches.map((value, index) => {
-      return <Switch
+function SwitchList ({ handleSwitchClick, switches }) {
+  return (
+    <div className="switch-list">
+      {
+        switches.map((value, index) => {
+          return <Switch
                on={value}
                key={index}
                index={index}
                handleSwitchClick={handleSwitchClick}
              />
-    })
-  }
+        })
 
-  render(){
-    const { switches, handleSwitchClick } = this.props
-    return (
-      <div className="switch-list">
-        {this.renderSwitches(switches, handleSwitchClick)}
-      </div>
-    )
-  }
+      }
+    </div>
+  )
 }
 
 export default SwitchList;
